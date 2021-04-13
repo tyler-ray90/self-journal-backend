@@ -14,7 +14,7 @@ async function index(req, res) {
      try {
          const journal = await Journal.create(req.body);
          res.status(201).json(journal);
-         // index(req, res);
+        //  index(req, res);
      } catch (error) {
          res.status(401).json({ error: 'something went wrong' });
      }
