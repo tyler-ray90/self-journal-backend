@@ -6,6 +6,6 @@ const journalSchema = new Schema({
     goal: String,
     grateful: String,
     journalEntry: String,
-});
+}, {timestamps: true});
 
 module.exports = mongoose.model('Journal', journalSchema);

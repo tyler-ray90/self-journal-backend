@@ -6,7 +6,7 @@ mongoose.connect('mongodb+srv://admin:mushookie@cluster0.yigvn.mongodb.net/journ
     useCreateIndex: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
-});
+}); 
 
 db.on('connected', function() {
     console.log(`Connected to MongoDb at ${db.host}:${db.port}`);
