@@ -22,7 +22,7 @@ async function index(req, res) {
 
  async function show(req, res) {
     try {
-        const journal = await Journal.create(req.body);
+        const journal = await Journal.show(req.body);
         res.status(201).json(journal);
         // index(req, res);
     } catch (error) {

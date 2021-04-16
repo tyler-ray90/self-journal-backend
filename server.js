@@ -22,7 +22,7 @@ app.use('/api/journal', require('./routes/api/journal'));
 
 // Tell app to listen to port 3001
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 3005
 
 app.listen(port, function() {
     console.log(`Express app running on port ${port}`)
