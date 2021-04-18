@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const db = mongoose.connection;
 
-mongoose.connect('mongodb+srv://admin:mushookie@cluster0.yigvn.mongodb.net/journal-entries?retryWrites=true&w=majority', {
+mongoose.connect(process.env.DATABASE_URI, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,

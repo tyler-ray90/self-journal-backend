@@ -10,6 +10,7 @@ const app = express();
 
 // Configure settings app.set()
 // require('dotenv').config();
+require('dotenv').config();
 require('./config/database');
 
 // Mount middleware with app.use()
